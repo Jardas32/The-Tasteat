@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --with: #ffffff;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1440px;
+    min-height: 1800px;
+    max-height: auto;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    height: 360px;
+}
+
+.licounts {
+    position: relative;
+}
+
+.spancount {
+    position: absolute;
+    top: -16px;
+    right: -15px;
+    background-color: red;
+    color: #ffffff;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1cart {
+    margin-top: -50px;
+    color: rgba(49, 56, 67, 0.849);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 24px 0 0 0;
+    line-height: 35px;
+    letter-spacing: 0.2px;
+    font-family: "Roboto", serif;
+}
+
+.korzbg {
+    margin-top: -50px; 
+    position: relative;
+    width: 1000px;
+    min-height: 500px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.korzimg {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 370px;
+    width: 300px;
+    height: 400px;
+}
+
+.imgK {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.korz {
+    width: 900px;
+    min-height: 100px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.newcard {
+    width: 900px;
+    height: 120px;
+    display: flex;
+}
+
+.card {
+    background-color: #f4f2f2;
+    width: 100%;
+    height: 120px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(0 0 1px rgb(6, 6, 6));
+    transition: all 1s;
+}
+
+.divz {
+    cursor: pointer;
+    width: 140px;
+    height: 110px;
+    margin-left: 5px;
+    overflow: hidden;
+}
+
+.divz:hover .imgKorz {
+    transform: scale(1.3);
+}
+
+.imgKorz {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s;
+}
+
+.titlekorz {
+    color: rgb(92, 23, 21);
+    font-size: 25px;
+    font-family: "Josefin Sans", serif;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 23px;
+}
+
+.price {
+    color: rgb(169, 7, 7);
+    font-size: 22px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.opisanie {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    color: rgba(21, 26, 35, 0.792);
+    font-size: 20px;
+    font-family: "Josefin Sans", serif;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    line-height: 23px;
+}
+
+.btdelete {
+    background-color: #d5d5d5;
+    color: rgba(35, 33, 33, 0.642);
+    margin-right: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.4s;
+    font-size: 16px;
+}
+
+.btdelete:hover {
+    background-color: #9f9f9f;
+    color: var(--with);
+}
+
+.centerTotal {
+    display: flex;
+    width: 900px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.totalpricetext {
+    display: none;
+    /* margin-left: 610px; */
+    color: #000000;
+    width: 150px;
+    height: 25px;
+    font-size: 23px;
+    padding: 2px 0 0 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.totalprices {
+    display: none;
+    /* margin-right: 9px; */
+    width: 120px;
+    color: #000000;
+    height: 25px;
+    font-size: 23px;
+    padding: 2px 0 0 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.counts {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counts span {
+    cursor: pointer;
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .7s;
+}
+
+.counts span:hover {
+    background-color: rgb(187, 187, 187);
+    color: #000000;
+}
+
+.inputcount {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
